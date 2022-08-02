@@ -1,4 +1,4 @@
-const spinnerArray = [
+const spinnerCharacters = [
   "\r|   ",
   "\r/   ",
   "\r-  ",
@@ -11,7 +11,7 @@ const spinnerArray = [
 ];
 
 let delay = 100;
-for (let spin of spinnerArray) {
+for (let spin of spinnerCharacters) {
   setTimeout(() => {
     process.stdout.write(spin);
   }, delay)
